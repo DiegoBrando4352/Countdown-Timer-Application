@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <button class="nav-btn">Timer</button>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- Apple image with timer text inside -->
+    <div class="apple-container">
+      <img src="apple.png" alt="Apple" class="apple-img" />
+      <p id="timer">01:00</p>
+    </div>
+
+    <!-- Control buttons -->
+    <div class="controls">
+      <button id="startBtn" onclick="startTimer()">Start</button>
+      <button id="pauseBtn" onclick="pauseTimer()" disabled>Pause</button>
+      <button id="stopBtn"  onclick="stopTimer()"  disabled>Stop</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
